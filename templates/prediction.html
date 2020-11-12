@@ -1,0 +1,15 @@
+
+<!doctype html>
+<title>TB Predictor</title>
+<h1>Details of the TB Analysis</h1>
+<h3>Symptoms : </h3>
+<br>
+<h3>{{name}}, you should consult a doctor. </h3>
+<h2>TB Probabability: {{tb_prob}}</h2>
+<br>
+<h3> here is the chest xray analysis : (might take some time to load) </h3>
+<body>
+<!--<img src="{{url_for('static', filename=filename)}}"  width="200" height="200" />-->
+<img src="http://127.0.0.1:5000/plot/saliencymap" width="500" height="500"/>
+</body>
+</html>
