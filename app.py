@@ -30,7 +30,6 @@ def get_saliency_map(model,img_path):
                                            backprop_modifier=None, grad_modifier="absolute")
         plt.imshow(visualization)
         gaus = ndimage.gaussian_filter(visualization, sigma=5)
-
         plt.imshow(test_image1)
         plt.imshow(gaus, alpha=.7)
         axes[0].imshow(test_image1)
